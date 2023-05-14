@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   fill="none"
+   height="57"
+   viewBox="0 0 187 57"
+   width="187"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1577"
+     inkscape:window-height="680"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="5.631016"
+     inkscape:cx="91.716621"
+     inkscape:cy="17.360874"
+     inkscape:window-x="1847"
+     inkscape:window-y="168"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg16" />
+  <path
+     d="m 38.017369,20.341936 c 1.01343,0.602719 1.854837,1.473553 2.439031,2.523633 0.584195,1.050079 0.889957,2.24226 0.886409,3.45492 -0.0035,1.212834 -0.316284,2.40289 -0.906608,3.449263 -0.590328,1.046546 -1.436816,1.911884 -2.453753,2.508232 L 10.979457,48.109426 C 9.9722861,48.699968 8.8337206,49.005679 7.6772363,48.996194 6.5207493,48.986708 5.3868374,48.662499 4.3887907,48.055675 3.3907441,47.448851 2.563378,46.580807 1.9894108,45.538142 1.4154437,44.495474 1.114936,43.314639 1.117789,42.113647 l 0.093148,-31.8381 C 1.214776,9.0744063 1.5220293,7.8953316 2.102087,6.8560839 2.6819786,5.8168371 3.5144106,4.953768 4.51599,4.3530739 5.5175684,3.7523766 6.653524,3.4350731 7.8100441,3.4328494 8.9667292,3.4306098 10.103815,3.7435565 11.10751,4.3403995 Z"
+     fill="#4e6ef1"
+     id="path10"
+     style="fill:#008000;stroke-width:1.68435" />
+  <path
+     d="m 25.291149,9.6185225 c 0.851778,-0.5072429 1.821797,-0.7819069 2.812983,-0.796396 0.991187,-0.014485 1.968869,0.2316553 2.834874,0.7137802 0.866198,0.4821723 1.590507,1.1834463 2.100347,2.0335033 0.510033,0.850109 0.787683,1.819329 0.805086,2.810421 l 0.357667,20.318914 c 0.01757,0.994125 -0.227055,1.975183 -0.709233,2.844679 -0.482364,0.869453 -1.185151,1.596474 -2.03776,2.107841 -0.852727,0.511438 -1.825055,0.789129 -2.819105,0.805173 -0.994171,0.01611 -1.974961,-0.229993 -2.843681,-0.713623 L 7.9775316,29.825982 C 7.108811,29.342354 6.3829048,28.638406 5.8727524,27.785073 5.3627231,26.931667 5.086388,25.958858 5.0719239,24.964687 5.0573397,23.970588 5.3049961,22.99019 5.7898876,22.122199 c 0.4848926,-0.867991 1.1899272,-1.5929 2.044133,-2.101596 z"
+     fill="#e74c3c"
+     id="path12"
+     style="fill:#d40000;stroke-width:1.41463" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:49.9359px;line-height:0;font-family:Baskerville;-inkscape-font-specification:'Baskerville, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.2484"
+     x="56.892578"
+     y="35.541595"
+     id="text26"
+     transform="scale(0.71128495,1.4059063)"><tspan
+       sodipodi:role="line"
+       id="tspan24"
+       x="56.892578"
+       y="35.541595"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:49.9359px;line-height:1.15;font-family:Baskerville;-inkscape-font-specification:'Baskerville, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff0000;stroke-width:1.2484">SickShaw</tspan></text>
+</svg>

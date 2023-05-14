@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Default Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <style>
+    *{
+        box-sizing:border-box;
+        font-family: "Roboto",Arial, Helvetica, sans-serif;
+    }
+    body,html{
+        height:100%;
+    }
+    img{
+        width:100%;
+        height:auto;
+    }
+    svg{
+      cursor:grab;
+    }
+    h1,h2,h3,h4,h5,h6{
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    p{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    /*Navbar style*/
+    .navbar .container .nav-link{
+      color:white;
+    }
+    .searchmodal{
+        display:none;
+    }
+    .searchmodal a{
+        display:flex;
+        text-decoration:none;
+        color:white;
+        background-color: blue;
+        justify-content: center;
+        align-items: center;
+        width:75px;
+    }
+    .dropdown-menu{
+        padding:0;
+        border:none;
+    }
+    .dropdown-menu .dropdown-item{
+        border-bottom:1px solid #DCDCDC;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .dropdown-menu .dropdown-item:hover{
+        background-color: blue;
+        color:white;
+    }
+    .dropdown-toggle[aria-expanded="true"]::after{
+        transform:rotate(180deg);
+    }
+    /*End Navbar style*/
+     /*Header style*/
+     #header{
+      background-image: url("images/hero-bg.jpg");
+      background-size: cover;
+      background-position: center center;
+      height:90vh;
+     }
+    #header .container-fluid{
+      height:100%;
+    }
+    #header::before{
+      position:absolute;
+      content:" ";
+      background-color:#002D62;
+      height:90vh;
+      opacity:70%;
+      width:100%;
+    }
+    #header .container a{
+            display:inline-block;
+            border-radius: 5px;
+            position:relative;
+            padding:20px;
+            background:blue;
+            text-align: center;
+            width:150px;
+            cursor:grab;
+            font-weight: 400;
+            text-decoration: none;
+            color:white;
+            transition:linear 0.5s;
+        }
+      #header .container a:hover{
+        background:white;
+        color:black;
+      }
+      #header .container h6{
+        display:inline-block;
+        background-color: 	rgba(255, 255, 255, 0.1);
+        padding:10px;
+        font-weight: 400 ;
+      }
+      .middle-text{
+        position:relative;
+      }
+      #header h1{
+        font-size:3.5rem;
+      }
+      .iconsection{
+        display:flex;
+      }
+      .iconsection .icon{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .iconsection .icontext p,.icontext a{
+        color:gray;
+      }
+      .infosection{
+        border-bottom: 1px solid gainsboro;
+      }
+     /*End-Header style*/
+    /*About us style*/
+      #aboutus .col-lg-6{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 40px;
+      }
+      #aboutus h1{
+        font-weight: 900;
+        text-shadow: -1px -1px -1px black;
+      }
+      #aboutus p{
+        color:gray;
+      }
+      #aboutus a{
+        display:inline-block;
+            position:relative;
+            padding:20px;
+            background:white;
+            border:1px solid blue;
+            width:150px;
+            text-align: center;
+            cursor:grab;
+            font-weight: 400;
+            text-decoration: none;
+            color:blue;
+            border-radius: 5px;
+            transition:linear 0.5s;
+      }
+      #aboutus a:hover{
+        background:blue;
+        color:white;
+      }
+      #aboutus button{
+        display:inline-block;
+            position:relative;
+            padding:20px;
+            border:1px solid gainsboro;
+            text-align: center;
+            width:150px;
+            cursor:grab;
+            font-weight: 400;
+            transition:all 0.5s;
+      }
+      #aboutus .normal{
+        background:white;
+        color:gray;
+      }
+     .blue{
+        background-color: blue;
+        color:white;
+      }
+      .modalbuttons{
+        display:flex;
+      }
+    /*End About us style*/
+    /* Ourservices style*/
+    #ourservices{
+      background-color: #f5f5f5;
+    }
+    #ourservices .container{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .colcontent{
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding:0 20px 0 20px;
+      border-radius:15px;
+      box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+    .colcontent:hover{
+      box-shadow:0px 10px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+    .colcontent a{
+        display:inline-block;
+            position:relative;
+            padding:10px;
+            background:white;
+            border:1px solid blue;
+            width:150px;
+            text-align: center;
+            cursor:grab;
+            font-weight: 400;
+            text-decoration: none;
+            color:blue;
+            border-radius: 5px;
+            transition:linear 0.3s;
+            margin:20px 0 40px 0;
+      }
+      .colcontent a:hover{
+        background-color: blue;
+        color:white;
+      }
+      #ourservices p{
+        color:gray;
+        line-height:1.7em;
+      }
+      #ourservices h1,h5{
+        font-weight:700;
+        text-shadow: -1px -1px -1px black;
+      }
+    .colcontent svg{
+      margin:40px 0 20px 0;
+    }
+    /*End Ourservices style*/
+     /*Customer style*/
+     #customer{
+      background-color: #062a46;
+     }
+     #customer .colcontent{
+      padding:0;
+      background-color: white;
+     }
+     #customer img{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+     }
+     #customer .colcontent h1{
+      font-size:55px;
+      color:blue;
+      font-weight:700;
+      text-shadow:-1px -1px -1px blue;
+     }
+     #customer h4{
+      font-weight:700;
+      text-shadow:-1px -1px -1px black;
+     }
+     #customer h6{
+      padding-bottom: 40px;
+     }
+     #customer .container{
+      padding-top: 60px;
+      padding-bottom: 60px;
+     }
+      /*End Customer style*/
+     @media(max-width:992px){
+      #header h1{
+        font-size:2.5rem;
+      }
+      #header p{
+        font-size:15px;
+      }
+      .navbar-collapse{
+        background-color: white;
+}
+.navbar .container .nav-link{
+  color:black;
+  transition:all 0.3s;
+}
+.navbar .container .nav-link:hover{
+  background-color: blue;
+  color:white;
+}
+.iconstyle{
+  margin-bottom: 10px;
+}
+.iconstyle svg{
+  fill:black;
+  cursor:grab;
+}
+#aboutus .col-lg-6{
+  padding-right: 0;
+}
+     }
+    @media(max-width:400px){
+        .searchmodal input{
+            width:8rem;
+        }
+    }
+  </style>
+</head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#">Cedomir Mitic</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end w-100">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Home
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Home Default</a></li>
+                  <li><a class="dropdown-item" href="#">Home Slider</a></li>
+                  <li><a class="dropdown-item" href="#">Home Particles</a></li>
+                  <li><a class="dropdown-item" href="#">Home Video</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Services</a></li>
+                  <li><a class="dropdown-item" href="#">Services Details</a></li>
+                  <li><a class="dropdown-item" href="#">About us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Projects</a></li>
+                  <li><a class="dropdown-item" href="#">Project Detail</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Sidebar</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="iconstyle" style="display:flex">
+            <a style=" border:none; background-color: none; display:inline;" id="searchbtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+                </a>
+                    <div class="searchmodal" style="margin-left: 15px;">
+                    <input type="text">
+                    <a href="">Search</a>
+                    <a id="closebtn" style="width:50px; border-left:2px solid white; background:red; cursor:grab;">X</a>
+                  </div>
+                  </div>
+          </div>
+        </div>
+      </nav>
+      <!--END NAVBAR-->
+      <!--HEADER SECTION-->
+      <section id="header">
+        <div class="container-fluid h-100 d-flex align-items-center text-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-12">
+              <div class="middle-text">
+              <h6>Best solution company</h6>
+              <h1>The best solution<br> is to choose us</h1>
+              <p>
+                If you are going to use a passage of Lorem Ipsum,
+                 you need to be sure there
+                 isn't anything embarrassing hidden in the middle of text.
+                </p>
+                <a href="#">Get Offer</a>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+
+
+
+      </section>
+      <div class="infosection">
+      <div class="container">
+        <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
+          <div class="col-lg-4 col-md-12">
+            <div class="iconsection">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="blue" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+              </div>
+              <div class="icontext">
+                <h4>Address:</h4>
+                <p>1073 W Stephen Ave, Clawson</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="iconsection">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="blue" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+              </div>
+              <div class="icontext">
+                <h4>Call us:</h4>
+                <p>+1 200-222-4444</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="iconsection">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="blue" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                </svg>
+              </div>
+              <div class="icontext">
+                <h4>Email:</h4>
+                <a href="#" style="display:inline-block; margin-top:20px; margin-bottom: 20px;">bizzcorpy@example.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--END HEADER SECTION-->
+      <!--About us Section-->
+      <section id="aboutus">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <h6 style="color:blue; font-weight: 400;">About us</h6>
+              <h1>17 Years of experience<br> <span style="color:blue;">customer</span> satisfaction</h1>
+              <p>
+                It is a long established fact that a reader will be
+                 distracted by the readable content of a page when looking 
+                 at its layout. The point of using Lorem Ipsum is that it has 
+                 a more-or-less normal distribution of letters, as opposed to
+                  using 'Content here, content here', making it look like 
+                  readable English.
+                </p>
+                <div class="modalbuttons">
+                <button id="openbtn" class="normal">Our Vision</button> <button id="closebtn2" class="normal">Our Mission</button>
+              </div>
+                <div class="ourvision">
+                  <p>
+                    There are many variations of passages of Lorem Ipsum available,
+                     but the majority have suffered alteration in some form, by injected 
+                     humour, or randomised words which don't look even slightly believable.
+                  </p>
+                </div>
+                <div class="ourmission" style="display:none;">
+                  <p>
+                    If you are going to use a passage of Lorem Ipsum, 
+                    you need to be sure there isn't anything embarrassing 
+                    hidden in the middle of text. All the Lorem Ipsum generators
+                     on the Internet tend to repeat predefined chunks
+                    </p>
+                </div>
+                <a href="#">Read more</a>
+            </div>
+            <div class="col-lg-6 col-md-12" id="imagecol">
+              <img src="images/about-img.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End About us Section-->
+      <!--Our Services Section-->
+      <section id="ourservices">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+          <div class="row d-flex justify-content-center align-items-center" style="margin-bottom: 40px;">
+            <div class="col-lg-7 col-md-6 col-sm-12 text-center">
+              <h1>Our Services</h1>
+              <p>
+                It is a long established fact that a reader will be distracted by the readable
+                 content of a page when looking at its layout.
+                </p>
+            </div>
+          </div>
+          <div class="row" id="rowcontent">
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+              <div class="colcontent">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="blue" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                  </svg>
+                <h5>Trading Ideas</h5>
+                <p>
+                  
+                  It is a long established fact that a reader will be distracted by the readable
+                   content of a page when looking at its layout.
+                  </p>
+                  <a href="">Read More</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+              <div class="colcontent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="blue" class="bi bi-briefcase" viewBox="0 0 16 16">
+                  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+                <h5>Business Strategy</h5>
+                <p>
+                  
+                  It is a long established fact that a reader will be distracted by the readable
+                   content of a page when looking at its layout.
+                  </p>
+                  <a href="">Read More</a>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+              <div class="colcontent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="blue" class="bi bi-cast" viewBox="0 0 16 16">
+                  <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0z"/>
+                  <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086l-1-1z"/>
+                </svg>
+                <h5>Project Architecture</h5>
+                <p>
+                  
+                  It is a long established fact that a reader will be distracted by the readable
+                   content of a page when looking at its layout.
+                  </p>
+                  <a href="">Read More</a>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+              <div class="colcontent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="blue" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                  <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                  <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                  <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+                </svg>
+                <h5>Investment Consulting</h5>
+                <p>
+                  
+                  It is a long established fact that a reader will be distracted by the readable
+                   content of a page when looking at its layout.
+                  </p>
+                  <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+              <div class="colcontent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="blue" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                  <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                </svg>
+                <h5>
+                  Dealership Agreement</h5>
+                <p>
+                  
+                  It is a long established fact that a reader will be distracted by the readable
+                   content of a page when looking at its layout.
+                  </p>
+                  <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+              <div class="colcontent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="blue" class="bi bi-people" viewBox="0 0 16 16">
+                  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+                </svg>
+                <h5>Business Partnership</h5>
+                <p>
+                  
+                  It is a long established fact that a reader will be distracted by the readable
+                   content of a page when looking at its layout.
+                  </p>
+                  <a href="">Read More</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End OurServices Section-->
+      <!--Customer Section-->
+      <section id="customer">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+          <div class="row d-flex justify-content-center align-items-center" style="margin-bottom: 40px;">
+            <div class="col-lg-7 col-md-6 col-sm-12 text-center">
+              <h1 class="text-white">International Customer Potential</h1>
+              <p style="color:silver; font-weight: 500;">
+                It is a long established fact that a reader will be distracted by the readable
+                 content of a page when looking at its layout.
+                </p>
+            </div>
+          </div>
+          <div class="row" id="rowcontent">
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+              <div class="colcontent">
+                <img src="images/potential-img-1.jpg">
+                <h5>Domestic Production<br>Potential</h5>
+                <h1 class="number1"></h1>
+                <h6>BILLION/TONS</h6>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+                <div class="colcontent">
+                  <img src="images/potential-img-2.jpg">
+                  <h5>Overseas Production<br>Potential</h5>
+                  <h1 class="number2"></h1>
+                  <h6>BILLION/TONS</h6>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+                  <div class="colcontent">
+                    <img src="images/potential-img-3.jpg">
+                    <h5>International Production<br>Capacity</h5>
+                    <h1 class="number3"></h1>
+                    <h6>BILLION/TONS</h6>
+                  </div>
+                  </div>
+              </div>
+        </div>
+      </section>
+      <!--End Customer Section-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script>
+
+ var searchbtn = document.getElementById('searchbtn');
+ var searchmodal = document.querySelector('.searchmodal');
+ var closebtn = document.getElementById('closebtn');
+ searchbtn.addEventListener('click',function(event){
+    searchmodal.style.display = "flex";
+ })
+ closebtn.addEventListener('click',function(event){
+    searchmodal.style.display = "none";
+ })
+var openbtn=document.getElementById('openbtn');
+var closebtn2=document.getElementById('closebtn2');
+var ourvision=document.querySelector('.ourvision');
+var ourmission=document.querySelector('.ourmission');
+openbtn.addEventListener('click',function(event){
+  openbtn.classList.add('blue');
+  openbtn.classList.remove('normal');
+  closebtn2.classList.remove('blue');
+  ourvision.style.display="initial";
+  ourmission.style.display="none";
+})
+closebtn2.addEventListener('click',function(event){
+  openbtn.classList.remove('blue');
+  closebtn2.classList.add('blue');
+  closebtn2.classList.remove('normal');
+  ourvision.style.display="none";
+  ourmission.style.display="initial";
+})
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const number1 = document.querySelector(".number1");
+const number2 = document.querySelector(".number2");
+const number3 = document.querySelector(".number3");
+animateValue(number1, 0, 650, 1200);
+animateValue(number2, 0, 780, 1200);
+animateValue(number3, 0, 950, 1200);
+  </script>
+</body>
+</html>
